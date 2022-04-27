@@ -34,7 +34,7 @@ namespace TodoApp.Services
             
         }
 
-        public void SaveData(BindingList<TodoModel> todoDataList)
+        public void SaveData(object todoDataList)
         {
             using (StreamWriter writer = File.CreateText(PATH))
             {
